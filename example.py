@@ -603,7 +603,9 @@ def main():
         #debug('steplimit: {} x: {} y: {} pos: {} dx: {} dy {}'.format(steplimit2, x, y, pos, dx, dy))
         # Scan location math
         if -steplimit2 / 2 < x <= steplimit2 / 2 and -steplimit2 / 2 < y <= steplimit2 / 2:
-            set_location_coords(x * 0.0025 + origin_lat, y * 0.0025 + origin_lon, 0)
+            #set_location_coords(x * 0.0025 + origin_lat, y * 0.0025 + origin_lon, 0)
+            set_location_coords(x * 0.0011 + origin_lat, y * 0.00085 + origin_lon, 0)
+
         if x == y or x < 0 and x == -y or x > 0 and x == 1 - y:
             (dx, dy) = (-dy, dx)
 
